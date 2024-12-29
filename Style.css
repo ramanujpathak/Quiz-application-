@@ -1,0 +1,116 @@
+/* Quiz Container */
+body{
+    background-color:paleturquoise;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mains,h1{
+    text-align: center;
+    color: rgb(255, 32, 32);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  #quiz-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Options */
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .options div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background 0.3s ease, border 0.3s ease;
+  }
+  
+  .options div:hover {
+    background-color: #e9ecef;
+    border-color: #007bff;
+  }
+  
+  .options input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .options label {
+    font-size: 1em;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  /* Buttons */
+  #button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background: #007bff;
+    color: white;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  button:disabled {
+    background: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Progress Bar */
+  #progress-bar {
+    height: 10px;
+    background: #007bff;
+    margin-top: 20px;
+    transition: width 0.3s ease;
+    border-radius: 5px;
+  }
+  h1:hover{
+    color: blue;
+    cursor: pointer;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    #quiz-container {
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 0.9em;
+    }
+  }
+  
